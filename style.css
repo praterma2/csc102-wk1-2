@@ -1,0 +1,11 @@
+body {
+    background-color: fuchsia;
+}
+
+.button{
+    background-color: white;
+    width: 100px;
+    height: 30px;
+    border-radius: 12px;
+    border-color: lightblue;
+}

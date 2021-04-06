@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<!--file creator: Matt Prater
+email:mprater@uat.edu
+for CSC102 class SP2021Online3-->
+<html>
+
+<head>
+    <!--This is the head, 
+    none of this appears in the body of the page-->
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <title>
+        Matt's UATSpace Page
+    </title>
+
+</head>
+<script>
+    //this is a single line javascript comment
+    
+
+</script>
+
+<body>
+    <img src="UATspaceLogo.jpg">
+    <h1>
+        This is my page!!!
+    </h1>
+    <p>
+        this is a test of paragraph tags
+    </p>
+    <script>
+        alert("this is a test of the alert function");
+        document.write("This is a test of the document.write function");
+    </script>
+    <br>
+    <br>
+    <p id="countDownTimer">Starting countdown here...</p>
+    <br>
+    <button class="button" onclick="countDown();">Start</button><button class="button">Stop</button>
+
+    <script>
+        //creating a countdown function to count from 5 to 1 and then blastoff
+        function countDown() {
+            var count = 5;
+            //starting countdown at 5
+            document.getElementById("countDownTimer").innerHTML = count;
+            count = count - 1;
+            
+            //then going to 4
+            setTimeout(function() {
+                document.getElementById("countDownTimer").innerHTML = count;
+                count = count - 1;
+            }, 1000);
+
+            //then 3
+            setTimeout(function() {
+                document.getElementById("countDownTimer").innerHTML = count;
+                count = count - 1;
+            }, 2000);
+
+            //2
+            setTimeout(function() {
+                document.getElementById("countDownTimer").innerHTML = count;
+                count = count - 1;
+            }, 3000);
+
+            //1
+            setTimeout(function() {
+                document.getElementById("countDownTimer").innerHTML = count;
+                count = count - 1;
+            }, 4000);
+
+            //blastoff!!!
+            setTimeout(function() {
+                document.getElementById("countDownTimer").innerHTML = "Blastoff!!!";
+                count = count - 1;
+            }, 5000);
+        }
+    </script>
+</body>
+
+
+</html>
